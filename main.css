@@ -60,7 +60,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -1563,7 +1563,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   font-family: "Poppins";
-  color: #fff;
+  color: #f6f6f6;
   position: relative;
 }
 h3 {
@@ -1588,7 +1588,7 @@ footer {
   background: linear-gradient(140deg, #5ea2ef, #cc329f);
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 1180px;
   background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1987,6 +1987,40 @@ footer {
 .app-button img {
   padding-right: 10px;
 }
+.about-teach {
+  color: #212958;
+  font-size: 45px;
+  display: block;
+}
+.about-teach-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-title {
+  margin-bottom: 30px;
+}
+.card-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.teach-card {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 40px;
+  margin-right: 20px;
+}
+.teach-card span {
+  color: #c1237f;
+  font-size: 22px;
+}
 .testimonial {
   text-align: center;
   margin-bottom: 5em;
@@ -2074,7 +2108,7 @@ footer {
   margin-right: 15px;
 }
 .about-jumbotron {
-  height: 70vh !important;
+  height: 750px !important;
 }
 .about-frontpage {
   justify-content: space-around !important;
@@ -2082,6 +2116,21 @@ footer {
 }
 .about-frontpage2 {
   width: 25vw !important;
+}
+.about-works {
+  background-image: url(img/about/about-bg1.png);
+  height: 900px;
+  background-repeat: no-repeat;
+}
+.about-works-title {
+  padding-top: 9em;
+}
+.about-works-content {
+  text-align: center;
+  display: flex;
+}
+#teachBox {
+  height: 800px;
 }
 .text-block {
   height: 100%;

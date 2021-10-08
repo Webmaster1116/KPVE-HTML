@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="css/home.css" />
     <title>TEACH IN A BOX</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
@@ -47,115 +48,17 @@
           U+2212, U+2215, U+FEFF, U+FFFD;
       }
     </style>
+
     <link
-      href="https://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,700"
-      rel="preload"
-      type="text/css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <noscript
-      ><link
-        href="https://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,700"
-        rel="stylesheet"
-        type="text/css"
-    /></noscript>
-    <link
-      href="main.css?c49053a638954f744dcd"
+      href="css/main.css?c49053a638954f744dcd"
       rel="preload"
       as="style"
       onload="this.rel='stylesheet'"
     />
-    <noscript
-      ><link href="main.css?c49053a638954f744dcd" rel="stylesheet"
-    /></noscript>
-    <script>
-      !(function (e) {
-        "use strict";
-        var t = function (t, n, r) {
-          function o(e) {
-            if (i.body) return e();
-            setTimeout(function () {
-              o(e);
-            });
-          }
-          function a() {
-            d.addEventListener && d.removeEventListener("load", a),
-              (d.media = r || "all");
-          }
-          var l,
-            i = e.document,
-            d = i.createElement("link");
-          if (n) l = n;
-          else {
-            var s = (i.body || i.getElementsByTagName("head")[0]).childNodes;
-            l = s[s.length - 1];
-          }
-          var u = i.styleSheets;
-          (d.rel = "stylesheet"),
-            (d.href = t),
-            (d.media = "only x"),
-            o(function () {
-              l.parentNode.insertBefore(d, n ? l : l.nextSibling);
-            });
-          var f = function (e) {
-            for (var t = d.href, n = u.length; n--; )
-              if (u[n].href === t) return e();
-            setTimeout(function () {
-              f(e);
-            });
-          };
-          return (
-            d.addEventListener && d.addEventListener("load", a),
-            (d.onloadcssdefined = f),
-            f(a),
-            d
-          );
-        };
-        "undefined" != typeof exports ? (exports.loadCSS = t) : (e.loadCSS = t);
-      })("undefined" != typeof global ? global : this),
-        (function (e) {
-          if (e.loadCSS) {
-            var t = (loadCSS.relpreload = {});
-            if (
-              ((t.support = function () {
-                try {
-                  return e.document
-                    .createElement("link")
-                    .relList.supports("preload");
-                } catch (e) {
-                  return !1;
-                }
-              }),
-              (t.poly = function () {
-                for (
-                  var t = e.document.getElementsByTagName("link"), n = 0;
-                  n < t.length;
-                  n++
-                ) {
-                  var r = t[n];
-                  "preload" === r.rel &&
-                    "style" === r.getAttribute("as") &&
-                    (e.loadCSS(r.href, r, r.getAttribute("media")),
-                    (r.rel = null));
-                }
-              }),
-              !t.support())
-            ) {
-              t.poly();
-              var n = e.setInterval(t.poly, 300);
-              e.addEventListener &&
-                e.addEventListener("load", function () {
-                  t.poly(), e.clearInterval(n);
-                }),
-                e.attachEvent &&
-                  e.attachEvent("onload", function () {
-                    e.clearInterval(n);
-                  });
-            }
-          }
-        })(this);
-    </script>
+    <noscript>
+      <link href="css/main.css?c49053a638954f744dcd" rel="stylesheet" />
+    </noscript>
+    <noscript></noscript>
   </head>
   <body>
     <div class="overflow">
@@ -191,7 +94,7 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Services</a>
+                <a class="nav-link" href="marketplace.html">Marketplace</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">Pricing</a>
@@ -778,14 +681,6 @@
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
-    <!-- <script
-      defer="defer"
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"
-    ></script> -->
-    <!-- <script
-      defer="defer"
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ScrollToPlugin.min.js"
-    ></script> -->
     <script
       type="text/javascript"
       src="js/main.bundle.js?c49053a638954f744dcd"

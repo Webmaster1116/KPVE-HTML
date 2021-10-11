@@ -92,6 +92,8 @@
 .about-people {
   background-image: url("../img/about/about-bg3.png");
   height: 1200px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .about-feature:hover {
   background: linear-gradient(180deg, #e75d7a, #c12280);
@@ -126,4 +128,16 @@
 }
 .about-footer {
   margin-top: 8em;
+}
+
+@media (max-width: 1366px) {
+  .about-container1 {
+    padding-top: 4em;
+  }
+  .about-people {
+    height: 850px;
+  }
+  .about-feature h2 {
+    font-size: 22px;
+  }
 }

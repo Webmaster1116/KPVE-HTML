@@ -9,7 +9,7 @@ footer {
   background: linear-gradient(140deg, #5ea2ef, #cc329f);
   position: relative;
   width: 100%;
-  height: 1180px;
+  height: 900px;
   background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,7 +43,15 @@ footer {
   line-height: 2.5;
 }
 .serach-name {
-  padding: 0 12rem 0 2rem;
+  padding: 0 2rem;
+  color: #000;
+  background: none;
+  outline: none;
+  border: none;
+  width: 50%;
+}
+.serach-name::placeholder {
+  color: #fff;
   opacity: 0.7;
 }
 .home-search {
@@ -87,6 +95,7 @@ footer {
   background: white;
   border-radius: 20px;
   padding: 30px;
+  background-size: cover;
 }
 .container1 {
   margin-top: 8rem !important;
@@ -95,7 +104,7 @@ footer {
       rgba(193, 34, 128, 0.9)
     ),
     url("../img/home/students.png") !important;
-  height: 77vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +156,7 @@ footer {
 }
 .feature p {
   margin-bottom: 2rem;
-  line-height: 1.8rem;
+  line-height: 3;
   text-align: center;
   font-size: 14px;
   padding: 10px 15px;
@@ -180,6 +189,7 @@ footer {
   background-image: url("../img/home/resource-bg.png");
   height: 1400px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .resource-header {
   font-size: 45px;
@@ -330,9 +340,6 @@ footer {
 .why-teach {
   height: 1000px;
 }
-.why-content {
-  padding-top: 6em;
-}
 .why-content-title {
   color: #212957;
   font-size: 50px;
@@ -348,8 +355,9 @@ footer {
 }
 .why-bg {
   background-image: url("../img/home/why-bg.svg");
-  height: 790px;
+  height: 900px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .why-description1 {
   color: #000;
@@ -373,9 +381,10 @@ footer {
   height: 1000px;
 }
 .app-bg {
-  background-image: url("../img/home/app-bg.svg");
+  background-image: url("../img/home/app-bg.png");
   height: 850px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .app-content {
   padding-top: 12em;
@@ -386,7 +395,7 @@ footer {
   font-weight: bold;
 }
 .app-description {
-  color: #000;
+  color: #212957;
   font-size: 16px;
   font-weight: bold;
   display: block;
@@ -500,4 +509,108 @@ footer {
 }
 .copyright-social-icon {
   margin-right: 15px;
+}
+@media (max-width: 1366px) {
+  .feature p {
+    font-size: 11px;
+    line-height: 2;
+  }
+  .featured h2 {
+    font-size: 20px;
+  }
+  .feature span {
+    font-size: 20px;
+  }
+  .middle-button2 {
+    margin-top: 5.3rem;
+  }
+  .resource-header {
+    font-size: 35px;
+  }
+  .resource-header-content {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 80vw !important;
+  }
+  .resource-content-header {
+    font-size: 11px;
+  }
+  .resource-button1 {
+    padding: 11px 25px;
+  }
+  .resource-button {
+    padding: 5px 0px 5px 7px;
+    font-size: 9px;
+  }
+  .resource-content p {
+    font-size: 10px;
+  }
+  .green-section {
+    height: 1000px;
+  }
+  .resource-image1,
+  .resource-image2,
+  .resource-image3 {
+    width: 175px;
+  }
+  .resource-image1 {
+    margin: 0px -8px;
+  }
+  .resource-image2 {
+    margin: 46px -15px 0;
+  }
+  .view-more {
+    font-size: 15px;
+  }
+  .resource-view-more {
+    margin-top: 2em;
+  }
+  .why-content-title {
+    font-size: 40px;
+  }
+  .why-description1 {
+    font-size: 18px;
+  }
+  .why-description2 {
+    font-size: 14px;
+  }
+  .why-know-more {
+    font-size: 15px;
+    margin-top: 3em;
+  }
+  .resource-header-bar {
+    padding-top: 70px;
+  }
+  .resource-first {
+    margin-top: 2em;
+  }
+  .price-value {
+    font-size: 20px;
+  }
+  .price-tag {
+    font-size: 10px;
+  }
+  .resource-buttons-group1 {
+    margin-top: 10px;
+  }
+  .why-content {
+    padding-top: 0em;
+  }
+  .why-description2 {
+    line-height: 2;
+  }
+  .why-main img {
+    margin-top: 0em;
+  }
+  .why-bg {
+    height: 650px;
+  }
+  .why-teach {
+    height: 500px;
+  }
+  .app-content-title {
+    font-size: 50px;
+  }
 }

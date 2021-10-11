@@ -190,3 +190,33 @@
   padding-left: 15px;
   padding-bottom: 15px;
 }
+
+@media (max-width: 1366px) {
+  .jumbotron {
+    margin-top: 2em;
+    height: 2000px !important;
+    margin-top: 7em !important;
+  }
+  .resource-first .lg-image {
+    margin: 0 10px;
+    padding: 20px 5px;
+  }
+  .frontpage {
+    padding: 0 3rem !important;
+  }
+  .resource-content-header {
+    font-size: 10px !important;
+  }
+  .resource-title {
+    padding-left: 10px;
+  }
+  .resource-content p {
+    font-size: 8px !important;
+  }
+  .resource-button {
+    padding: 5px;
+  }
+  .image-box img {
+    width: 75px;
+  }
+}

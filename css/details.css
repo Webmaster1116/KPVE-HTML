@@ -101,6 +101,7 @@
 }
 .details-btn-group {
   display: flex;
+  align-items: center;
   margin-top: 3em;
 }
 .middle-buttons {
@@ -115,9 +116,13 @@
   width: 250px;
   padding: 15px 0 !important;
   border-radius: 35px !important;
+  color: #c12280 !important;
+  text-align: center;
+  text-decoration: none !important;
 }
 .middle-button:hover {
   border: none;
+  color: #fff !important;
   background: linear-gradient(90deg, #e75d7a, #c12280);
 }
 .middle-button:hover img {
@@ -154,6 +159,9 @@
 .follow-content {
   display: flex;
   padding: 20px 0;
+}
+.follow-content img {
+  padding-right: 10px;
 }
 .follow-content span {
   color: #000;
@@ -226,6 +234,7 @@
 }
 .post-comment-stars img {
   padding-right: 10px;
+  cursor: pointer;
 }
 .view-featured {
   font-size: 16px;
@@ -255,4 +264,106 @@
   background: #f6f6f6;
   width: 30%;
   outline: none;
+}
+.modal-dialog {
+  width: 50%;
+  margin: 14em auto;
+}
+.modal-content {
+  border-radius: 20px;
+}
+.modal-header {
+  border: none;
+}
+.modal-close {
+  opacity: 0.5;
+}
+.modal-close:hover {
+  opacity: 1;
+}
+.modal-body-content {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.modal-body-content span {
+  color: #000;
+  font-size: 30px;
+}
+.payment-btn {
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #5ea2ef, #d12d9c);
+}
+.payment-btn:hover {
+  background: linear-gradient(90deg, #d12d9c, #5ea2ef);
+}
+.modal-footer {
+  border: none;
+  padding: 30px;
+}
+
+@media (max-width: 1366px) {
+  .jumbotron {
+    margin-top: 2em;
+    height: 3750px !important;
+  }
+  .resource-first .lg-image {
+    margin: 0 10px;
+    padding: 20px 5px;
+  }
+  .frontpage {
+    padding: 0 3rem !important;
+  }
+  .resource-content-header {
+    font-size: 9px !important;
+  }
+  .modal-dialog {
+    margin: 3em auto;
+  }
+  .details-imgs img {
+    width: 100%;
+  }
+  .detail-content-title {
+    font-size: 35px;
+  }
+  .seller-content-title {
+    font-size: 20px;
+  }
+  .seller-content {
+    font-size: 20px;
+  }
+  .reading-title {
+    font-size: 20px;
+  }
+  .reading-content {
+    font-size: 20px;
+  }
+  .detail-price span {
+    font-size: 20px;
+  }
+  .detail-price p {
+    font-size: 35px;
+  }
+  .details-main span {
+    font-size: 20px;
+  }
+  .details-main p {
+    font-size: 14px;
+  }
+  .middle-button {
+    font-size: 16px !important;
+    width: 200px;
+  }
+  .follow-content span {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .middle-button-follow {
+    font-size: 14px !important;
+    width: 150px !important;
+  }
 }

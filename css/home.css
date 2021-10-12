@@ -104,7 +104,7 @@ footer {
       rgba(193, 34, 128, 0.9)
     ),
     url("../img/home/students.png") !important;
-  height: 100%;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;

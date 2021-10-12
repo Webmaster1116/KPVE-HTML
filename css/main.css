@@ -1056,7 +1056,7 @@ a > code {
     background: transparent;
     border: 1px solid white;
     border-radius: 30px;
-    padding: 10px 35px;
+    padding: 10px 35px !important;
     color: white;
     display: flex;
     align-items: center;
@@ -1894,6 +1894,7 @@ a > code {
 
   .home-login:hover {
     border: 1px solid #fe4a49;
+    color: #fff;
   }
 
   .nav > li > a:focus,

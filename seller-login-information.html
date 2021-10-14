@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/marketplace.css" />
-    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/buyer-login-information.css" />
     <title>TEACH IN A BOX</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
@@ -64,7 +64,7 @@
   </head>
   <body>
     <div class="overflow">
-      <header class="jumbotron jumbotron-fluid cart-jumbotron">
+      <header class="jumbotron jumbotron-fluid seller-jumbotron">
         <nav
           class="
             navbar navbar-expand-md
@@ -75,7 +75,9 @@
           "
         >
           <div class="logo">
-            <a href="index.html"><img src="img/home/home-logo.svg" alt="Home logo" /></a>
+            <a href="index.html"
+              ><img src="img/home/home-logo.svg" alt="Home logo"
+            /></a>
           </div>
           <button
             class="navbar-toggler"
@@ -117,50 +119,88 @@
             </ul>
           </div>
         </nav>
-        <div class="frontpage cart-frontpage">
-          <div class="teach-cart container">
-            <div class="cart-title col-lg-12">
-              <div class="col-lg-5">
-                <div>Product Title</div>
-              </div>
-              <div class="col-lg-7">
-                <div class="col-lg-4">Price</div>
-                <div class="col-lg-4">Qty</div>
-                <div class="col-lg-4">Amount</div>
-              </div>
+        <div class="frontpage login-frontpage">
+          <div class="login container">
+            <div class="buyer-signup-bg">
+              <img src="img/become-member/seller-login-information.svg" />
             </div>
-            <div class="cart-title col-lg-12 cart-content">
-              <div class="col-lg-5">
-                <div class="cart-image-title">
-                  <img src="img/cart/cart-image1.svg" />
-                  <div class="content1">READING RESPONSE WORKSHEETS</div>
-                </div>
+            <div class="login-box">
+              <div class="login-header">
+                <span>Seller Registration</span>
               </div>
-              <div class="col-lg-7">
-                <div class="col-lg-4 content2">$4.00</div>
-                <div class="col-lg-4 content2">1</div>
-                <div class="col-lg-4 content2 content3">
-                  <span>$4.00</span>
-                  <img src="img/cart/Icon-delete.svg" />
-                </div>
+              <div class="personal">
+                <span>Login Information</span>
               </div>
-            </div>
-            <div class="col-lg-12 cart-total">
-              <div class="col-lg-6"></div>
-              <div class="col-lg-6 cart-total-content">
-                <span class="content1">Total</span>
-                <span class="content2">$4.00</span>
+              <div class="login-input">
+                <input
+                  class="buyer-input"
+                  type="email"
+                  placeholder="Email Address"
+                />
+                <input
+                  class="buyer-input"
+                  type="email"
+                  placeholder="Re Enter Email Address"
+                />
+                <input
+                  class="buyer-input"
+                  type="email"
+                  placeholder="Paypal Email Address"
+                />
+                <span
+                  >Please enter your current paypal address so we are able to
+                  deposit the money from your sales monthly. If you do not have
+                  a paypal account it is a very simple process, follow the link
+                  below. We also recommend you sign up to a premier or business
+                  PayPal account. If you have an existing personal paypal
+                  account, then we recommend you upgrade to one the above
+                  accounts, it's free to do so</span
+                >
+                <input
+                  class="user-id buyer-input"
+                  type="text"
+                  placeholder="Create your Teach In A Box User ID / Store Name"
+                />
+                <span
+                  >Please note that no spaces or special characters are allowed
+                  in the User ID / Store Name - Characters allowed include
+                  letters A-Z and numbers 0-9. You can also utilise fullstops
+                  (.) and underscores (_) to space out your User ID / Store
+                  Name. Please note: User ID / Store Name cannot be changed once
+                  you have registered, so please choose your name
+                  carefully.</span
+                >
+                <input
+                  class="password buyer-input"
+                  type="password"
+                  placeholder="Create your Password"
+                />
+                <input
+                  class="buyer-input"
+                  type="password"
+                  placeholder="Re enter your password"
+                />
+
+                <select class="form-control select1">
+                  <option selected>Pick a secret question</option>
+                  <option>Your first pet's name?</option>
+                  <option>Your most favorite song?</option>
+                  <option>Your dream car?</option>
+                  <option>Your most favorite football player?</option>
+                </select>
+                <span
+                  >This will be required if you happen to forget your username
+                  or password to regain access to your account</span
+                >
+                <input
+                  class="secret-answer buyer-input"
+                  type="text"
+                  placeholder="Your secret answer"
+                />
               </div>
-            </div>
-          </div>
-          <div class="container cart-btn-group">
-            <div class="middle-buttons">
-              <button class="middle-button middle-button2">
-                Continue Shopping
-              </button>
-            </div>
-            <div class="middle-buttons">
-              <button class="middle-button middle-button2">Checkout</button>
+              <div class="login-btn-group">
+                <a href="australian-only.html" class="login-btn">Continue</a>
+              </div>
             </div>
           </div>
         </div>

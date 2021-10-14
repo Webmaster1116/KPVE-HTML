@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/marketplace.css" />
-    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/buyer-signup.css" />
     <title>TEACH IN A BOX</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
@@ -75,7 +75,9 @@
           "
         >
           <div class="logo">
-            <a href="index.html"><img src="img/home/home-logo.svg" alt="Home logo" /></a>
+            <a href="index.html"
+              ><img src="img/home/home-logo.svg" alt="Home logo"
+            /></a>
           </div>
           <button
             class="navbar-toggler"
@@ -117,50 +119,61 @@
             </ul>
           </div>
         </nav>
-        <div class="frontpage cart-frontpage">
-          <div class="teach-cart container">
-            <div class="cart-title col-lg-12">
-              <div class="col-lg-5">
-                <div>Product Title</div>
-              </div>
-              <div class="col-lg-7">
-                <div class="col-lg-4">Price</div>
-                <div class="col-lg-4">Qty</div>
-                <div class="col-lg-4">Amount</div>
-              </div>
+        <div class="frontpage login-frontpage">
+          <div class="login container">
+            <div class="buyer-signup-bg">
+              <img src="img/become-member/buyer-signup.svg" />
             </div>
-            <div class="cart-title col-lg-12 cart-content">
-              <div class="col-lg-5">
-                <div class="cart-image-title">
-                  <img src="img/cart/cart-image1.svg" />
-                  <div class="content1">READING RESPONSE WORKSHEETS</div>
+            <div class="login-box">
+              <div class="login-header">
+                <span>Buyer Registration</span>
+              </div>
+              <div class="personal">
+                <span>Personal Information</span>
+              </div>
+              <div class="login-input">
+                <div>
+                  <input class="input1" type="text" placeholder="First Name:" />
+                  <input class="input1" type="text" placeholder="Last Name:" />
                 </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="col-lg-4 content2">$4.00</div>
-                <div class="col-lg-4 content2">1</div>
-                <div class="col-lg-4 content2 content3">
-                  <span>$4.00</span>
-                  <img src="img/cart/Icon-delete.svg" />
+                <input
+                  class="input2"
+                  type="text"
+                  placeholder="Date of Birth (YYYY/MM/DD)"
+                />
+                <div>
+                  <input
+                    class="input1"
+                    type="text"
+                    placeholder="State / Territory"
+                  />
+                  <select class="form-control select1 select2">
+                    <option selected>Country / Region</option>
+                    <option>Australia</option>
+                    <option>United State</option>
+                    <option>United Kingdom</option>
+                    <option>Russia</option>
+                  </select>
                 </div>
+
+                <input
+                  class="input2"
+                  type="text"
+                  placeholder="Referral Code / Referred By "
+                />
+                <select class="form-control select1">
+                  <option selected>How did you hear about TeachInABox</option>
+                  <option>Friend</option>
+                  <option>Teacher</option>
+                  <option>Family</option>
+                  <option>Colleague</option>
+                </select>
               </div>
-            </div>
-            <div class="col-lg-12 cart-total">
-              <div class="col-lg-6"></div>
-              <div class="col-lg-6 cart-total-content">
-                <span class="content1">Total</span>
-                <span class="content2">$4.00</span>
+              <div class="login-btn-group">
+                <a href="buyer-login-information.html" class="login-btn"
+                  >Continue</a
+                >
               </div>
-            </div>
-          </div>
-          <div class="container cart-btn-group">
-            <div class="middle-buttons">
-              <button class="middle-button middle-button2">
-                Continue Shopping
-              </button>
-            </div>
-            <div class="middle-buttons">
-              <button class="middle-button middle-button2">Checkout</button>
             </div>
           </div>
         </div>

@@ -7,6 +7,12 @@
   margin-right: 25em;
   margin-top: 8em;
 }
+.modal-notification {
+  width: 350px !important;
+  float: right;
+  margin-right: 30.5em;
+  margin-top: 7em;
+}
 .modal-content {
   border-radius: 20px;
 }
@@ -21,10 +27,20 @@
   display: flex;
   align-items: center;
 }
-.body-content span {
+.body-notification {
+  margin: 30px 5px;
+}
+.body-content a {
   color: #000;
   font-size: 20px;
   margin-left: 15px;
+  text-decoration: none;
+}
+.body-notification a {
+  font-size: 14px;
+}
+.body-content a:hover {
+  text-decoration: none;
 }
 .body-logout {
   justify-content: center;
@@ -46,4 +62,13 @@
 }
 .body-logout a img {
   margin-right: 10px;
+}
+
+@media (max-width: 1366px) {
+  .modal-dialog {
+    margin-right: 11em;
+  }
+  .modal-notification {
+    margin-right: 16.5em;
+  }
 }

@@ -111,6 +111,7 @@ footer {
 }
 .container1 img {
   text-align: center;
+  cursor: pointer;
 }
 .featured h2 {
   font-size: 25px;
@@ -148,18 +149,20 @@ footer {
   display: flex;
   justify-content: center;
 }
-.middle-button1 {
-  margin-top: 37px;
-}
-.middle-button2 {
-  margin-top: 5.7rem;
-}
 .feature p {
   margin-bottom: 2rem;
   line-height: 2;
   text-align: center;
   font-size: 14px;
   padding: 10px 15px;
+}
+.feature1 p,
+.feature2 p {
+  height: 65px;
+}
+.feature1 span,
+.feature2 span {
+  height: 80px;
 }
 .feature span {
   display: flex;
@@ -520,9 +523,6 @@ footer {
   }
   .feature span {
     font-size: 20px;
-  }
-  .middle-button2 {
-    margin-top: 5.3rem;
   }
   .resource-header {
     font-size: 35px;

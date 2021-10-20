@@ -108,17 +108,20 @@
                 <a class="nav-link nav-contactus" href="">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-shopingcart" href=""
+                <a class="nav-link nav-shopingcart" href="cart.html"
                   ><img src="img/home/navicon-shopping-cart.svg"
                 /></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-hipchat" href=""
+                <a class="nav-link nav-hipchat" href="inbox.html"
                   ><img src="img/home/navicon-hipchat.svg"
                 /></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-notifications" href=""
+                <a
+                  class="nav-link nav-notifications"
+                  data-toggle="modal"
+                  data-target="#notificationModal"
                   ><img src="img/home/navicon-notifications.svg"
                 /></a>
               </li>
@@ -174,6 +177,7 @@
             <div class="col-lg-3 col-md-6 feature feature2">
               <h2>Free Resources</h2>
               <p>Browse and Download thousands of FREE resources right now!</p>
+              <span></span>
               <div class="middle-buttons">
                 <button class="middle-button middle-button2">Browse</button>
               </div>
@@ -184,6 +188,7 @@
                 Browse Downloadable teaching resources from our world class
                 teachers...
               </p>
+              <span></span>
               <div class="middle-buttons">
                 <button class="middle-button middle-button2">Browse</button>
               </div>
@@ -708,20 +713,41 @@
               </div>
               <div class="body-content">
                 <img src="img/home/user-dashboard.svg" />
-                <span>My Dashboard</span>
+                <a href="mydashboard.html">My Dashboard</a>
               </div>
               <div class="body-content">
                 <img src="img/home/user-sell.svg" />
-                <span>Sell</span>
+                <a href="sell-1.html">Sell</a>
               </div>
               <div class="body-content">
                 <img src="img/home/user-support.svg" />
-                <span>Support</span>
+                <a href="support.html">Support</a>
               </div>
               <div class="body-content body-logout">
                 <a href="index.html"
                   ><img src="img/home/user-logout.svg" />Logout</a
                 >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="notificationModal" role="dialog">
+        <div class="modal-dialog modal-notification">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-edge">
+                <img src="img/home/Union 1.png" />
+              </div>
+              <div class="body-content body-notification">
+                <img src="img/home/notification-completed.svg" />
+                <a href="">Your order has been completed</a>
+              </div>
+              <div class="body-content body-notification">
+                <img src="img/home/notification-canceled.svg" />
+                <a href="">Your order has been canceled</a>
               </div>
             </div>
           </div>

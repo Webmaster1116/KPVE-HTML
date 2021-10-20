@@ -10,7 +10,8 @@
     />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/marketplace.css" />
-    <link rel="stylesheet" href="css/australian-only.css" />
+    <link rel="stylesheet" href="css/mydashboard.css" />
+    <link rel="stylesheet" href="css/after-login-home.css" />
     <title>TEACH IN A BOX</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
@@ -64,7 +65,7 @@
   </head>
   <body>
     <div class="overflow">
-      <header class="jumbotron jumbotron-fluid cart-jumbotron">
+      <header class="jumbotron jumbotron-fluid dashboard-jumbotron">
         <nav
           class="
             navbar navbar-expand-md
@@ -97,89 +98,137 @@
           >
             <ul class="nav navbar-nav text-center">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link nav-home" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link nav-about" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="marketplace.html">Marketplace</a>
+                <a class="nav-link nav-marketplace" href="marketplace.html"
+                  >Marketplace</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link nav-pricing" href="">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link nav-contactus" href="">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a href="login.html" class="home-login">
-                  <img src="img/home/Icon-lock.svg" />Login
-                </a>
+                <a class="nav-link nav-shopingcart" href="cart.html"
+                  ><img src="img/home/navicon-shopping-cart.svg"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hipchat" href="inbox.html"
+                  ><img src="img/home/navicon-hipchat.svg"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-notifications"
+                  data-toggle="modal"
+                  data-target="#notificationModal"
+                  ><img src="img/home/navicon-notifications.svg"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-avatar"
+                  data-toggle="modal"
+                  data-target="#userModal"
+                  ><img src="img/home/nav-avatar.svg"
+                /></a>
               </li>
             </ul>
           </div>
         </nav>
-        <div class="frontpage login-frontpage">
-          <div class="login container">
-            <div class="buyer-signup-bg">
-              <img src="img/become-member/buyer-login-information.svg" />
+        <div class="frontpage">
+          <div class="col-lg-12">
+            <div class="container bashboard-container">
+              <img src="img/mydashboard/round-avatar.svg" />
             </div>
-            <div class="login-box">
-              <div class="login-header">
-                <span>Seller Registration</span>
+            <div class="container">
+              <div class="col-lg-4 sidebar">
+                <div class="sidebar-header">
+                  <p>Teachinabox2021</p>
+                  <div class="sidebar-star">
+                    <img src="img/mydashboard/Icon-star.svg" />4.5
+                  </div>
+                </div>
+                <div class="sidebar-follower">
+                  <span>Follower</span>
+                  <span class="follower-number">25</span>
+                </div>
+                <div class="sidebar-menu">
+                  <div>
+                    <img src="img/mydashboard/Icon-user.svg" />
+                    <a class="sidebar-btn" href="edit-profile1.html"
+                      >Edit Profile</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-sell.svg" />
+                    <a class="sidebar-btn" href="edit-sell1.html">Sell</a>
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-purchase.svg" />
+                    <a class="sidebar-btn" href="edit-purchase.html"
+                      >Purchase Summary</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-favorite.svg" />
+                    <a class="sidebar-btn" href="edit-favorite.html"
+                      >Favourites</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-selling.svg" />
+                    <a class="sidebar-btn" href="edit-selling.html"
+                      >Selling Summary</a
+                    >
+                  </div>
+                  <div class="last-menu">
+                    <img src="img/mydashboard/Icon-promote.svg" />
+                    <a class="sidebar-btn" href="edit-promote.html">Promote</a>
+                  </div>
+                </div>
               </div>
-              <div class="personal">
-                <span>Australian Residents only</span>
-              </div>
-              <div class="login-input">
-                <div class="gst-register">
-                  <span>GST Registered:</span>
-                  <!-- <input class="gst-register-input" type="checkbox" /> -->
-                  <img src="img/home/Icon-sm-checkbox.svg" />
-                  <span>Yes</span>
+              <div class="col-lg-8 profile">
+                <div class="profile-header">My Profile</div>
+                <div class="profile-inputs">
+                  <div class="profile-input">
+                    <span>From</span>
+                    <input type="text" placeholder="Text....." />
+                  </div>
+                  <div class="profile-input">
+                    <span>Professional Qualifications</span>
+                    <input type="text" placeholder="Text....." />
+                  </div>
+                  <div class="profile-input">
+                    <span>School/University Name</span>
+                    <input type="text" placeholder="Text....." />
+                  </div>
+                  <div class="profile-input half-input">
+                    <div>
+                      <span>Subjects Taught</span>
+                      <input type="text" placeholder="Text....." />
+                    </div>
+                    <div>
+                      <span>Grades Taught</span>
+                      <input type="text" placeholder="Text....." />
+                    </div>
+                  </div>
+                  <div class="profile-input">
+                    <span>Teaching Experience</span>
+                    <input type="text" placeholder="Text....." />
+                  </div>
+                  <div class="profile-input">
+                    <span>Brief Statement & Additional Information</span>
+                    <textarea rows="3" placeholder="Text....."></textarea>
+                  </div>
                 </div>
-                <input
-                  class="buyer-input"
-                  type="text"
-                  placeholder="Provide ABN :"
-                />
-                <div class="upload-file">
-                  <span class="upload-header"
-                    >Upload Profile Picture or Logo</span
-                  >
-                  <span class="upload-content"
-                    >This helps buyers with transaction confidence and
-                    familiarity with sellers.</span
-                  >
-                  <button><img src="img/become-member/upload.svg" /></button>
-                </div>
-                <div class="upload-file free-download">
-                  <span class="upload-header">Free Download</span>
-                  <span class="upload-content"
-                    >Please upload a sample of your work, for members to
-                    download so they can view the quality of your work, this can
-                    be a preview of a current resource that you are
-                    selling.</span
-                  >
-                  <button><img src="img/become-member/upload.svg" /></button>
-                </div>
-                <div class="checkbox">
-                  <input class="form-check-input" type="checkbox" />
-                  <span> accept the User Agreement and Copyright Policy</span>
-                </div>
-                <div class="checkbox">
-                  <input type="checkbox" />
-                  <span> I am at least 18 years of age</span>
-                </div>
-              </div>
-              <div class="login-btn-group">
-                <button
-                  class="login-btn"
-                  data-toggle="modal"
-                  data-target="#completeModal"
-                >
-                  Continue
-                </button>
               </div>
             </div>
           </div>
@@ -295,31 +344,53 @@
       </footer>
 
       <!-- Modal -->
-      <div class="modal fade" id="completeModal" role="dialog">
+      <div class="modal fade" id="userModal" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">
-            <div class="modal-header">
-              <img src="img/become-member/complete-modal.svg" />
-            </div>
             <div class="modal-body">
-              <div class="modal-body-content">
-                <span class="modal-body-top">REGISTRATION COMPLETE</span>
-                <span class="modal-body-middle">Welcome to Teach in a box</span>
-                <span class="modal-body-bottom"
-                  >You now have access to the world’s first online teaching
-                  resource network where teachers receive 100% royalty on sales
-                  and buyers have access to thousands of teaching materials
-                  developed by their fellow educators</span
-                >
+              <div class="modal-edge">
+                <img src="img/home/Union 1.png" />
               </div>
-              <div class="button-login-now">
-                <a href="login.html" class="login-now-btn"
-                  >Login to Your Account Now</a
+              <div class="body-content">
+                <img src="img/home/user-dashboard.svg" />
+                <a href="mydashboard.html">My Dashboard</a>
+              </div>
+              <div class="body-content">
+                <img src="img/home/user-sell.svg" />
+                <a href="sell-1.html">Sell</a>
+              </div>
+              <div class="body-content">
+                <img src="img/home/user-support.svg" />
+                <a href="support.html">Support</a>
+              </div>
+              <div class="body-content body-logout">
+                <a href="index.html"
+                  ><img src="img/home/user-logout.svg" />Logout</a
                 >
               </div>
             </div>
-            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="notificationModal" role="dialog">
+        <div class="modal-dialog modal-notification">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-edge">
+                <img src="img/home/Union 1.png" />
+              </div>
+              <div class="body-content body-notification">
+                <img src="img/home/notification-completed.svg" />
+                <a href="">Your order has been completed</a>
+              </div>
+              <div class="body-content body-notification">
+                <img src="img/home/notification-canceled.svg" />
+                <a href="">Your order has been canceled</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

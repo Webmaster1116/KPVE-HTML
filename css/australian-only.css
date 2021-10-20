@@ -126,6 +126,9 @@
 .gst-register input {
   margin: 0 5px 0 20px;
 }
+.gst-register img {
+  margin: 0 5px 0 20px;
+}
 .gst-register span {
   font-size: 16px;
   color: #707070;

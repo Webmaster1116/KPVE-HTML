@@ -10,8 +10,9 @@
     />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/marketplace.css" />
-    <link rel="stylesheet" href="css/after-login-home.css" />
     <link rel="stylesheet" href="css/sell.css" />
+    <link rel="stylesheet" href="css/mydashboard.css" />
+    <link rel="stylesheet" href="css/after-login-home.css" />
     <title>TEACH IN A BOX</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
@@ -65,7 +66,7 @@
   </head>
   <body>
     <div class="overflow">
-      <header class="jumbotron jumbotron-fluid sell-jumbotron">
+      <header class="jumbotron jumbotron-fluid edit-sell1-jumbotron">
         <nav
           class="
             navbar navbar-expand-md
@@ -98,19 +99,21 @@
           >
             <ul class="nav navbar-nav text-center">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link nav-home" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link nav-about" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="marketplace.html">Marketplace</a>
+                <a class="nav-link nav-marketplace" href="marketplace.html"
+                  >Marketplace</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link nav-pricing" href="">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link nav-contactus" href="">Contact Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-shopingcart" href="cart.html"
@@ -141,125 +144,187 @@
             </ul>
           </div>
         </nav>
-        <div class="sell-frontpage">
-          <div class="sell container">
-            <div class="sell-header">Sell</div>
-            <div class="sell-descript">
-              Follow the steps below to begin selling your teaching materials on
-              TeachInABox. These may be lesson plans, exams, quizzes, fun
-              activities etc. Provide a detailed description and a price which
-              you feel is fair and you are on your way. To see our seller tips
-              click here this will give you in-depth information on how to
-              become a top seller, setting prices, providing the right
-              information to attract buyers etc.
+        <div class="frontpage">
+          <div class="col-lg-12">
+            <div class="container bashboard-container">
+              <img src="img/mydashboard/round-avatar.svg" />
             </div>
-            <div class="sell-title">
-              <span class="sell-title-header">Title / Heading</span>
-              <input type="text" placeholder="Title" />
-              <span class="sell-descript">Allow max 300 characters</span>
-            </div>
-            <div class="sell-title">
-              <span class="sell-title-header">Description</span>
-              <textarea rows="3" placeholder="Text....."></textarea>
-              <span class="sell-descript"
-                >If your item is a hard good then make sure to provide your
-                postage specifications including locations to where you will
-                post along with cost of postage. If you are not providing
-                postage as part of your sale then provide an estimation as to
-                what suburb/city the buyer can pick up the item from.</span
-              >
-            </div>
-            <div class="sell-title sell-resource">
-              <span class="sell-title-header">Type of Resource</span>
-              <select class="form-control">
-                <option>Type</option>
-                <option>Type1</option>
-                <option>Type2</option>
-              </select>
-              <span class="sell-descript"
-                >Please choose the single most appropriate Resource Type, if you
-                feel your item falls under a number of categories then choose
-                the most suitable and explain your items versatility in your
-                item description.</span
-              >
-            </div>
-            <div class="sell-title">
-              <div>
-                <select class="form-control">
-                  <option>School Grade</option>
-                  <option>Grade 1</option>
-                  <option>Grade 2</option>
-                  <option>Grade 3</option>
-                </select>
-                <select class="form-control">
-                  <option>Subject Area</option>
-                  <option>Maths</option>
-                  <option>Physics</option>
-                  <option>Chemistry</option>
-                </select>
+            <div class="container">
+              <div class="col-lg-4 sidebar">
+                <div class="sidebar-header">
+                  <p>Teachinabox2021</p>
+                  <div class="sidebar-star">
+                    <img src="img/mydashboard/Icon-star.svg" />4.5
+                  </div>
+                </div>
+                <div class="sidebar-follower">
+                  <span>Follower</span>
+                  <span class="follower-number">25</span>
+                </div>
+                <div class="sidebar-menu">
+                  <div>
+                    <img src="img/mydashboard/Icon-user.svg" />
+                    <a class="sidebar-btn" href="edit-profile1.html"
+                      >Edit Profile</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-sell.svg" />
+                    <a
+                      class="sidebar-btn edit-profile-btn"
+                      href="edit-sell1.html"
+                      >Sell</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-purchase.svg" />
+                    <a class="sidebar-btn" href="edit-purchase.html"
+                      >Purchase Summary</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-favorite.svg" />
+                    <a class="sidebar-btn" href="edit-favorite.html"
+                      >Favourites</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-selling.svg" />
+                    <a class="sidebar-btn" href="edit-selling.html"
+                      >Selling Summary</a
+                    >
+                  </div>
+                  <div class="last-menu">
+                    <img src="img/mydashboard/Icon-promote.svg" />
+                    <a class="sidebar-btn" href="edit-promote.html">Promote</a>
+                  </div>
+                </div>
               </div>
-              <div>
-                <select class="form-control">
-                  <option>Teaching Duration</option>
-                  <option>1 Year</option>
-                  <option>2 Years</option>
-                  <option>3 Years</option>
-                </select>
-                <input type="text" placeholder="Number of Pages/Slides" />
+              <div class="col-lg-8 profile">
+                <div class="sell">
+                  <div class="profile-header">Sell</div>
+                  <div class="sell-descript">
+                    Follow the steps below to begin selling your teaching
+                    materials on TeachInABox. These may be lesson plans, exams,
+                    quizzes, fun activities etc. Provide a detailed description
+                    and a price which you feel is fair and you are on your way.
+                    To see our seller tips click here this will give you
+                    in-depth information on how to become a top seller, setting
+                    prices, providing the right information to attract buyers
+                    etc.
+                  </div>
+                  <div class="sell-title">
+                    <span class="sell-title-header">Title / Heading</span>
+                    <input type="text" placeholder="Title" />
+                    <span class="sell-descript">Allow max 300 characters</span>
+                  </div>
+                  <div class="sell-title">
+                    <span class="sell-title-header">Description</span>
+                    <textarea rows="3" placeholder="Text....."></textarea>
+                    <span class="sell-descript"
+                      >If your item is a hard good then make sure to provide
+                      your postage specifications including locations to where
+                      you will post along with cost of postage. If you are not
+                      providing postage as part of your sale then provide an
+                      estimation as to what suburb/city the buyer can pick up
+                      the item from.</span
+                    >
+                  </div>
+                  <div class="sell-title sell-resource">
+                    <span class="sell-title-header">Type of Resource</span>
+                    <select class="form-control">
+                      <option>Type</option>
+                      <option>Type1</option>
+                      <option>Type2</option>
+                    </select>
+                    <span class="sell-descript"
+                      >Please choose the single most appropriate Resource Type,
+                      if you feel your item falls under a number of categories
+                      then choose the most suitable and explain your items
+                      versatility in your item description.</span
+                    >
+                  </div>
+                  <div class="sell-title">
+                    <div>
+                      <select class="form-control">
+                        <option>School Grade</option>
+                        <option>Grade 1</option>
+                        <option>Grade 2</option>
+                        <option>Grade 3</option>
+                      </select>
+                      <select class="form-control">
+                        <option>Subject Area</option>
+                        <option>Maths</option>
+                        <option>Physics</option>
+                        <option>Chemistry</option>
+                      </select>
+                    </div>
+                    <div>
+                      <select class="form-control">
+                        <option>Teaching Duration</option>
+                        <option>1 Year</option>
+                        <option>2 Years</option>
+                        <option>3 Years</option>
+                      </select>
+                      <input type="text" placeholder="Number of Pages/Slides" />
+                    </div>
+                    <div>
+                      <select class="form-control">
+                        <option>Aligned to</option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="sell-btns">
+                    <a class="sell-btn1" href="edit-sell1.html"
+                      >List your item as a free resource?</a
+                    >
+                    <a class="sell-btn2" href="edit-sell2.html"
+                      >Is your item a hard good?</a
+                    >
+                  </div>
+                </div>
+                <div class="free-resource container">
+                  <div class="free-upload">
+                    <div class="free-resource-title">Upload Gallery Image</div>
+                    <span class="sell-descript"
+                      >(Upload the image which will be the face of the item for
+                      sale. This will be the first image that buyers will see,
+                      so make sure it is accurate and engaging. Please make sure
+                      your images are saved as .png, .gif or .jpeg files.)</span
+                    >
+                    <div>
+                      <img src="img/home/upload.svg" />
+                    </div>
+                  </div>
+                  <div class="free-upload free-upload2">
+                    <div class="free-resource-title">Upload Gallery Image</div>
+                    <span class="sell-descript"
+                      >(Please ensure you have adequate preview photos which are
+                      clear and display what you are selling, this is crucial to
+                      your success as a seller) (Max of 8 preview images. Please
+                      make sure your images are saved as .png, .gif or .jpeg
+                      files.)</span
+                    >
+                    <div>
+                      <img src="img/home/upload.svg" />
+                      <img src="img/home/upload.svg" />
+                      <img src="img/home/upload.svg" />
+                      <img src="img/home/upload.svg" />
+                    </div>
+                    <div>
+                      <img src="img/home/upload.svg" />
+                      <img src="img/home/upload.svg" />
+                      <img src="img/home/upload.svg" />
+                      <img src="img/home/upload.svg" />
+                    </div>
+                  </div>
+                  <div class="sell-btns">
+                    <a class="sell-btn" href="edit-sell2.html">Continue</a>
+                  </div>
+                </div>
               </div>
-              <div>
-                <select class="form-control">
-                  <option>Aligned to</option>
-                  <option></option>
-                  <option></option>
-                </select>
-              </div>
-            </div>
-            <div class="sell-btns">
-              <a class="sell-btn1" href="sell-1.html"
-                >List your item as a free resource?</a
-              >
-              <a class="sell-btn2" href="sell-2.html"
-                >Is your item a hard good?</a
-              >
-            </div>
-          </div>
-          <div class="free-resource container">
-            <div class="free-upload">
-              <div class="free-resource-title">Upload Gallery Image</div>
-              <span class="sell-descript"
-                >(Upload the image which will be the face of the item for sale.
-                This will be the first image that buyers will see, so make sure
-                it is accurate and engaging. Please make sure your images are
-                saved as .png, .gif or .jpeg files.)</span
-              >
-              <div>
-                <img src="img/home/upload.svg" />
-              </div>
-            </div>
-            <div class="free-upload free-upload2">
-              <div class="free-resource-title">Upload Gallery Image</div>
-              <span class="sell-descript"
-                >(Please ensure you have adequate preview photos which are clear
-                and display what you are selling, this is crucial to your
-                success as a seller) (Max of 8 preview images. Please make sure
-                your images are saved as .png, .gif or .jpeg files.)</span
-              >
-              <div>
-                <img src="img/home/upload.svg" />
-                <img src="img/home/upload.svg" />
-                <img src="img/home/upload.svg" />
-                <img src="img/home/upload.svg" />
-              </div>
-              <div>
-                <img src="img/home/upload.svg" />
-                <img src="img/home/upload.svg" />
-                <img src="img/home/upload.svg" />
-                <img src="img/home/upload.svg" />
-              </div>
-            </div>
-            <div class="sell-btns">
-              <a class="sell-btn" href="sell-2.html">Continue</a>
             </div>
           </div>
         </div>
@@ -372,6 +437,7 @@
           </div>
         </div>
       </footer>
+
       <!-- Modal -->
       <div class="modal fade" id="userModal" role="dialog">
         <div class="modal-dialog">

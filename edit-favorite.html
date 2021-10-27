@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/marketplace.css" />
+    <link rel="stylesheet" href="css/mydashboard.css" />
+    <link rel="stylesheet" href="css/after-login-home.css" />
+    <title>TEACH IN A BOX</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+    </style>
+    <style type="text/css">
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D,
+          U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+
+    <link
+      href="css/main.css?c49053a638954f744dcd"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript>
+      <link href="css/main.css?c49053a638954f744dcd" rel="stylesheet" />
+    </noscript>
+    <noscript></noscript>
+  </head>
+  <body>
+    <div class="overflow">
+      <header class="jumbotron jumbotron-fluid purchase-jumbotron">
+        <nav
+          class="
+            navbar navbar-expand-md
+            nav-fix
+            justify-content-between
+            fixed-navbar
+            teach-fixed-navbar
+          "
+        >
+          <div class="logo">
+            <a href="index.html"
+              ><img src="img/home/home-logo.svg" alt="Home logo"
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="mobileNav"
+          >
+            &#9776;
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarToggler"
+          >
+            <ul class="nav navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link nav-home" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-about" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-marketplace" href="marketplace.html"
+                  >Marketplace</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-pricing" href="">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-contactus" href="">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-shopingcart" href="cart.html"
+                  ><img src="img/home/navicon-shopping-cart.svg"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hipchat" href="inbox.html"
+                  ><img src="img/home/navicon-hipchat.svg"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-notifications"
+                  data-toggle="modal"
+                  data-target="#notificationModal"
+                  ><img src="img/home/navicon-notifications.svg"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-avatar"
+                  data-toggle="modal"
+                  data-target="#userModal"
+                  ><img src="img/home/nav-avatar.svg"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="frontpage">
+          <div class="col-lg-12">
+            <div class="container bashboard-container">
+              <img src="img/mydashboard/round-avatar.svg" />
+            </div>
+            <div class="container">
+              <div class="col-lg-4 sidebar">
+                <div class="sidebar-header">
+                  <p>Teachinabox2021</p>
+                  <div class="sidebar-star">
+                    <img src="img/mydashboard/Icon-star.svg" />4.5
+                  </div>
+                </div>
+                <div class="sidebar-follower">
+                  <span>Follower</span>
+                  <span class="follower-number">25</span>
+                </div>
+                <div class="sidebar-menu">
+                  <div>
+                    <img src="img/mydashboard/Icon-user.svg" />
+                    <a class="sidebar-btn" href="edit-profile1.html"
+                      >Edit Profile</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-sell.svg" />
+                    <a class="sidebar-btn" href="edit-sell1.html">Sell</a>
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-purchase.svg" />
+                    <a class="sidebar-btn" href="edit-purchase.html"
+                      >Purchase Summary</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-favorite.svg" />
+                    <a
+                      class="sidebar-btn edit-profile-btn"
+                      href="edit-favorite.html"
+                      >Favourites</a
+                    >
+                  </div>
+                  <div>
+                    <img src="img/mydashboard/Icon-selling.svg" />
+                    <a class="sidebar-btn" href="edit-selling.html"
+                      >Selling Summary</a
+                    >
+                  </div>
+                  <div class="last-menu">
+                    <img src="img/mydashboard/Icon-promote.svg" />
+                    <a class="sidebar-btn" href="edit-promote.html">Promote</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 profile">
+                <div class="profile-header">Favourites</div>
+                <div class="container resource-first">
+                  <div class="col-lg-4 lg-image">
+                    <div class="stats">
+                      <div class="col-lg-2">
+                        <p>
+                          <img src="img/marketplace/Icon-star.svg" /><span
+                            >4.5</span
+                          >
+                        </p>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="card-imgs">
+                          <img
+                            class="resource-image resource-image1"
+                            src="img/marketplace/card1.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <img src="img/marketplace/Icon-circle.svg" />
+                      </div>
+                    </div>
+                    <div class="resource-content col-lg-12">
+                      <span class="resource-content-header"
+                        >RECYCLING WORD MAT (AUSTRALIA)</span
+                      >
+                      <p>
+                        <span class="resource-title-header">Seller :-</span>
+                        <span class="resource-title"
+                          >TwinklEducationalPublishing</span
+                        >
+                      </p>
+                      <p>
+                        <span class="resource-title-header">Grade :-</span>
+                        <span class="resource-title">Year 1 – Year 3 </span>
+                      </p>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Subject :-</span>
+                          <span class="resource-title1">Reading</span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2">
+                        <p class="resource-button">
+                          <span class="resource-title-header">File :-</span>
+                          <span class="resource-title1">PDF.</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Type :-</span>
+                          <span class="resource-title1">Activities </span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2"></div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group1">
+                      <div class="col-lg-7 resource-buttons1 market-icons">
+                        <a href="details.html" class="resource-button1">
+                          <img src="img/marketplace/Icon-eye.svg" />
+                        </a>
+                        <a href="cart.html" class="resource-button1 cart-btn">
+                          <img src="img/marketplace/Icon-cart.svg" />
+                        </a>
+                      </div>
+                      <div class="col-lg-3 resource-price">
+                        <span class="price-tag">Price</span>
+                        <span class="price-value">$4.20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 lg-image">
+                    <div class="stats">
+                      <div class="col-lg-2">
+                        <p>
+                          <img src="img/marketplace/icon-star.svg" /><span
+                            >4.5</span
+                          >
+                        </p>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="card-imgs">
+                          <img
+                            class="resource-image resource-image1"
+                            src="img/marketplace/card2.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <img src="img/marketplace/icon-circle.svg" />
+                      </div>
+                    </div>
+                    <div class="resource-content col-lg-12">
+                      <span class="resource-content-header"
+                        >BOOK REVIEW WORKSHEET</span
+                      >
+                      <p>
+                        <span class="resource-title-header">Seller :-</span>
+                        <span class="resource-title"
+                          >TwinklEducationalPublishing</span
+                        >
+                      </p>
+                      <p>
+                        <span class="resource-title-header">Grade :-</span>
+                        <span class="resource-title">Year 1 – Year 3 </span>
+                      </p>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Subject :-</span>
+                          <span class="resource-title1">Reading</span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2">
+                        <p class="resource-button">
+                          <span class="resource-title-header">File :-</span>
+                          <span class="resource-title1">PDF.</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Type :-</span>
+                          <span class="resource-title1">Activities </span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2"></div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group1">
+                      <div class="col-lg-7 resource-buttons1 market-icons">
+                        <a href="details.html" class="resource-button1">
+                          <img src="img/marketplace/Icon-eye.svg" />
+                        </a>
+                        <a href="cart.html" class="resource-button1 cart-btn">
+                          <img src="img/marketplace/Icon-cart.svg" />
+                        </a>
+                      </div>
+                      <div class="col-lg-3 resource-price">
+                        <span class="price-tag">Price</span>
+                        <span class="price-value">$4.20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 lg-image">
+                    <div class="stats">
+                      <div class="col-lg-2">
+                        <p>
+                          <img src="img/marketplace/Icon-star.svg" /><span
+                            >4.5</span
+                          >
+                        </p>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="card-imgs">
+                          <img
+                            class="resource-image resource-image1"
+                            src="img/marketplace/card3.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <img src="img/marketplace/Icon-circle.svg" />
+                      </div>
+                    </div>
+                    <div class="resource-content col-lg-12">
+                      <span class="resource-content-header"
+                        >THE INCY WINCY SPIDER DISPLAY BANNER</span
+                      >
+                      <p>
+                        <span class="resource-title-header">Seller :-</span>
+                        <span class="resource-title"
+                          >TwinklEducationalPublishing</span
+                        >
+                      </p>
+                      <p>
+                        <span class="resource-title-header">Grade :-</span>
+                        <span class="resource-title"
+                          >Pre-K - Kindergarten
+                        </span>
+                      </p>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Subject :-</span>
+                          <span class="resource-title1">Reading</span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2">
+                        <p class="resource-button">
+                          <span class="resource-title-header">File :-</span>
+                          <span class="resource-title1">PDF.</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Type :-</span>
+                          <span class="resource-title1">Activities </span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2"></div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group1">
+                      <div class="col-lg-7 resource-buttons1 market-icons">
+                        <a href="details.html" class="resource-button1">
+                          <img src="img/marketplace/Icon-eye.svg" />
+                        </a>
+                        <a href="cart.html" class="resource-button1 cart-btn">
+                          <img src="img/marketplace/Icon-cart.svg" />
+                        </a>
+                      </div>
+                      <div class="col-lg-3 resource-price">
+                        <span class="price-tag">Price</span>
+                        <span class="price-value">$4.20</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container resource-first">
+                  <div class="col-lg-4 lg-image">
+                    <div class="stats">
+                      <div class="col-lg-2">
+                        <p>
+                          <img src="img/marketplace/Icon-star.svg" /><span
+                            >4.5</span
+                          >
+                        </p>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="card-imgs">
+                          <img
+                            class="resource-image resource-image1"
+                            src="img/marketplace/card1.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <img src="img/marketplace/Icon-circle.svg" />
+                      </div>
+                    </div>
+                    <div class="resource-content col-lg-12">
+                      <span class="resource-content-header"
+                        >RECYCLING WORD MAT (AUSTRALIA)</span
+                      >
+                      <p>
+                        <span class="resource-title-header">Seller :-</span>
+                        <span class="resource-title"
+                          >TwinklEducationalPublishing</span
+                        >
+                      </p>
+                      <p>
+                        <span class="resource-title-header">Grade :-</span>
+                        <span class="resource-title">Year 1 – Year 3 </span>
+                      </p>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Subject :-</span>
+                          <span class="resource-title1">Reading</span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2">
+                        <p class="resource-button">
+                          <span class="resource-title-header">File :-</span>
+                          <span class="resource-title1">PDF.</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Type :-</span>
+                          <span class="resource-title1">Activities </span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2"></div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group1">
+                      <div class="col-lg-7 resource-buttons1 market-icons">
+                        <a href="details.html" class="resource-button1">
+                          <img src="img/marketplace/Icon-eye.svg" />
+                        </a>
+                        <a href="cart.html" class="resource-button1 cart-btn">
+                          <img src="img/marketplace/Icon-cart.svg" />
+                        </a>
+                      </div>
+                      <div class="col-lg-3 resource-price">
+                        <span class="price-tag">Price</span>
+                        <span class="price-value">$4.20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 lg-image">
+                    <div class="stats">
+                      <div class="col-lg-2">
+                        <p>
+                          <img src="img/marketplace/icon-star.svg" /><span
+                            >4.5</span
+                          >
+                        </p>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="card-imgs">
+                          <img
+                            class="resource-image resource-image1"
+                            src="img/marketplace/card2.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <img src="img/marketplace/icon-circle.svg" />
+                      </div>
+                    </div>
+                    <div class="resource-content col-lg-12">
+                      <span class="resource-content-header"
+                        >BOOK REVIEW WORKSHEET</span
+                      >
+                      <p>
+                        <span class="resource-title-header">Seller :-</span>
+                        <span class="resource-title"
+                          >TwinklEducationalPublishing</span
+                        >
+                      </p>
+                      <p>
+                        <span class="resource-title-header">Grade :-</span>
+                        <span class="resource-title">Year 1 – Year 3 </span>
+                      </p>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Subject :-</span>
+                          <span class="resource-title1">Reading</span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2">
+                        <p class="resource-button">
+                          <span class="resource-title-header">File :-</span>
+                          <span class="resource-title1">PDF.</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Type :-</span>
+                          <span class="resource-title1">Activities </span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2"></div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group1">
+                      <div class="col-lg-7 resource-buttons1 market-icons">
+                        <a href="details.html" class="resource-button1">
+                          <img src="img/marketplace/Icon-eye.svg" />
+                        </a>
+                        <a href="cart.html" class="resource-button1 cart-btn">
+                          <img src="img/marketplace/Icon-cart.svg" />
+                        </a>
+                      </div>
+                      <div class="col-lg-3 resource-price">
+                        <span class="price-tag">Price</span>
+                        <span class="price-value">$4.20</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 lg-image">
+                    <div class="stats">
+                      <div class="col-lg-2">
+                        <p>
+                          <img src="img/marketplace/Icon-star.svg" /><span
+                            >4.5</span
+                          >
+                        </p>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="card-imgs">
+                          <img
+                            class="resource-image resource-image1"
+                            src="img/marketplace/card3.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <img src="img/marketplace/Icon-circle.svg" />
+                      </div>
+                    </div>
+                    <div class="resource-content col-lg-12">
+                      <span class="resource-content-header"
+                        >THE INCY WINCY SPIDER DISPLAY BANNER</span
+                      >
+                      <p>
+                        <span class="resource-title-header">Seller :-</span>
+                        <span class="resource-title"
+                          >TwinklEducationalPublishing</span
+                        >
+                      </p>
+                      <p>
+                        <span class="resource-title-header">Grade :-</span>
+                        <span class="resource-title"
+                          >Pre-K - Kindergarten
+                        </span>
+                      </p>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Subject :-</span>
+                          <span class="resource-title1">Reading</span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2">
+                        <p class="resource-button">
+                          <span class="resource-title-header">File :-</span>
+                          <span class="resource-title1">PDF.</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group">
+                      <div class="col-lg-6 resource-buttons1">
+                        <p class="resource-button">
+                          <span class="resource-title-header">Type :-</span>
+                          <span class="resource-title1">Activities </span>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 resource-buttons2"></div>
+                    </div>
+                    <div class="col-lg-12 resource-buttons-group1">
+                      <div class="col-lg-7 resource-buttons1 market-icons">
+                        <a href="details.html" class="resource-button1">
+                          <img src="img/marketplace/Icon-eye.svg" />
+                        </a>
+                        <a href="cart.html" class="resource-button1 cart-btn">
+                          <img src="img/marketplace/Icon-cart.svg" />
+                        </a>
+                      </div>
+                      <div class="col-lg-3 resource-price">
+                        <span class="price-tag">Price</span>
+                        <span class="price-value">$4.20</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="marketplace-pagination">
+                  <button class="page-btn arrow-btn arrow-left">
+                    <img src="img/marketplace/Icon-left.svg" />
+                  </button>
+                  <button class="page-btn number-btn">1</button>
+                  <button class="page-btn number-btn">2</button>
+                  <button class="page-btn number-btn">3</button>
+                  <button class="page-btn arrow-btn arrow-right">
+                    <img
+                      class="arrow-right-img"
+                      src="img/marketplace/Icon-left.svg"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <footer class="marketplace-footer">
+        <div class="container marketplace-footer-menu">
+          <div class="row">
+            <div class="col-lg-3 hidden-md hidden-sm col-xs-12 mar_b-30">
+              <div class="footer-wrapper">
+                <div class="footer-title">
+                  <p>Resources</p>
+                </div>
+                <div class="footer-wrapper">
+                  <ul class="footer-resources">
+                    <li><a href="#">> Featured Resources</a></li>
+                    <li><a href="#">> Free Resources</a></li>
+                    <li><a href="#">> Most Popular Resources</a></li>
+                    <li><a href="#">> Top Teachers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 hidden-md hidden-sm col-xs-12 mar_b-30">
+              <div class="footer-wrapper">
+                <div class="footer-title">
+                  <p>Grades</p>
+                </div>
+                <div class="footer-wrapper">
+                  <ul class="footer-resources">
+                    <li><a href="#">> Pre-K - Kindergarten</a></li>
+                    <li><a href="#">> Year 1 – Year 3</a></li>
+                    <li><a href="#">> Year 4 – Year 6</a></li>
+                    <li><a href="#">> Year 7 – Year 9</a></li>
+                    <li><a href="#">> Year 10 – Year 12</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 hidden-md hidden-sm col-xs-12 mar_b-30">
+              <div class="footer-wrapper">
+                <div class="footer-title">
+                  <p>Corporate</p>
+                </div>
+                <div class="footer-wrapper">
+                  <ul class="footer-resources">
+                    <li><a href="#">> FAQ</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#">> Privacy Policy</a></li>
+                    <li><a href="#">> Copyright Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 hidden-md hidden-sm col-xs-12 mar_b-30">
+              <div class="footer-wrapper">
+                <div class="footer-title">
+                  <p>New Users</p>
+                </div>
+                <div class="footer-wrapper">
+                  <ul class="footer-resources">
+                    <li><a href="login.html">> Sign-in</a></li>
+                    <li><a href="become-member.html">> Become a Member</a></li>
+                    <li><a href="#">> Why Register?</a></li>
+                    <li><a href="#">> Frequently Asked Questions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright"></div>
+        <div class="footer-copyright-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mar_b-30">
+                <div class="copyright text-left">
+                  <p>Copyright TeachInABox 2021</p>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div class="col-lg-8 copyright-img text-right">
+                  <a href="#"
+                    ><img src="img/home/Icon-mail.svg" />info@gmail.com</a
+                  >
+                  <a href="#"
+                    ><img src="img/home/Icon-ios-call.svg" />+91 99999-88888</a
+                  >
+                </div>
+                <div class="col-lg-4">
+                  <img
+                    class="copyright-social-icon"
+                    src="img/home/Icon-facebook.svg"
+                  />
+                  <img
+                    class="copyright-social-icon"
+                    src="img/home/Icon-twitter.svg"
+                  />
+                  <img
+                    class="copyright-social-icon"
+                    src="img/home/Icon-google-plus.svg"
+                  />
+                  <img
+                    class="copyright-social-icon"
+                    src="img/home/Icon-pinterest.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Modal -->
+      <div class="modal fade" id="userModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-edge">
+                <img src="img/home/Union 1.png" />
+              </div>
+              <div class="body-content">
+                <img src="img/home/user-dashboard.svg" />
+                <a href="mydashboard.html">My Dashboard</a>
+              </div>
+              <div class="body-content">
+                <img src="img/home/user-sell.svg" />
+                <a href="sell-1.html">Sell</a>
+              </div>
+              <div class="body-content">
+                <img src="img/home/user-support.svg" />
+                <a href="support.html">Support</a>
+              </div>
+              <div class="body-content body-logout">
+                <a href="index.html"
+                  ><img src="img/home/user-logout.svg" />Logout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="notificationModal" role="dialog">
+        <div class="modal-dialog modal-notification">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-edge">
+                <img src="img/home/Union 1.png" />
+              </div>
+              <div class="body-content body-notification">
+                <img src="img/home/notification-completed.svg" />
+                <a href="">Your order has been completed</a>
+              </div>
+              <div class="body-content body-notification">
+                <img src="img/home/notification-canceled.svg" />
+                <a href="">Your order has been canceled</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer="defer"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/main.bundle.js?c49053a638954f744dcd"
+      defer="defer"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

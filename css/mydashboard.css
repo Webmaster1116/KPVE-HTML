@@ -24,6 +24,21 @@
 .profile1-jumbotron {
   height: 2700px !important;
 }
+.edit-sell1-jumbotron {
+  height: 3200px !important;
+}
+.edit-sell2-jumbotron {
+  height: 4250px !important;
+}
+.purchase-jumbotron {
+  height: 1650px !important;
+}
+.selling-jumbotron {
+  height: 1750px !important;
+}
+.promote-jumbotron {
+  height: 2050px !important;
+}
 .frontpage {
   align-items: initial !important;
   margin-top: 3em;
@@ -202,9 +217,50 @@ textarea {
 .professional-info {
   margin-top: 4em;
 }
+.sell-btns a {
+  font-size: 18px !important;
+}
+.free-upload img {
+  margin: 20px 15px 0 0 !important;
+  width: 200px !important;
+}
+.free-upload2 {
+  margin-top: 3em;
+}
+.resource-first .lg-image {
+  margin: 0 10px;
+}
+.resource-content-header {
+  font-size: 10px !important;
+}
+.resource-content p {
+  font-size: 9px !important;
+}
+.resource-first {
+  margin-top: 20px;
+  width: 115% !important;
+}
+.summary-title {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+.promote-imgs div {
+  display: flex;
+  margin: 40px 0 20px;
+}
+.promote-imgs div img {
+  margin-right: 20px;
+}
 
 @media (max-width: 1366px) {
   .container {
+    max-width: 85vw !important;
+  }
+  .edit-sell1-jumbotron .container {
+    max-width: 85vw !important;
+  }
+  .edit-sell2-jumbotron .container {
     max-width: 85vw !important;
   }
   .jumbotron {
@@ -215,6 +271,18 @@ textarea {
   }
   .profile1-jumbotron {
     height: 2700px !important;
+  }
+  .edit-sell1-jumbotron {
+    height: 3150px !important;
+  }
+  .edit-sell2-jumbotron {
+    height: 4250px !important;
+  }
+  .purchase-jumbotron {
+    height: 1550px !important;
+  }
+  .selling-jumbotron {
+    height: 1700px !important;
   }
   .bashboard-container img {
     margin-top: 2em;
@@ -231,5 +299,34 @@ textarea {
   }
   .banner-content {
     width: 100%;
+  }
+  .sell-btn2 {
+    margin-left: 5px !important;
+  }
+  .sell-btns a {
+    font-size: 15px !important;
+  }
+  .free-upload img {
+    margin: 20px 15px 0 0 !important;
+    width: 150px !important;
+  }
+  .hard-checkbox span {
+    font-size: 21px;
+  }
+  .resource-first {
+    margin-top: 20px;
+    width: 105% !important;
+  }
+  .profile {
+    padding-left: 3em !important;
+  }
+  .resource-content-header {
+    font-size: 9px !important;
+  }
+  .promote-imgs img {
+    height: 200px;
+  }
+  .promote-jumbotron {
+    height: 1910px !important;
   }
 }
